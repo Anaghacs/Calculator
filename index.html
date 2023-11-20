@@ -9,41 +9,35 @@
 
 </head>
 <body>
-    <div class="main-body">
-        <div class="calc">
-            <div class="output">
-                <input type="text" id="screen">
-            </div>
-            <div class="buttons">
-                <button onclick="clearScreen()" class="btns">C</button>
-                <button onclick="clicking('.')" class="btns">.</button>
-                    <button onclick="clicking(0)" class="btns">0</button>
-                    <button onclick="clicking('+')" class="btns">+</button>
-                <div class="row">
-                    <button onclick="clicking(7)" class="btns">7</button>
-                    <button onclick="clicking(8)" class="btns">8</button>
-                    <button onclick="clicking(9)" class="btns">9</button>
-                    <button onclick="clicking('/')" class="btns">/</button>
-                </div>
-                <div class="row">
-                    <button onclick="clicking(4)" class="btns">4</button>
-                    <button onclick="clicking(5)" class="btns">5</button>
-                    <button onclick="clicking(6)" class="btns">6</button>
-                    <button onclick="clicking('*')" class="btns">*</button>
-                </div>
-                <div class="row">
-                    <button onclick="clicking(1)" class="btns">1</button>
-                    <button onclick="clicking(2)" class="btns">2</button>
-                    <button onclick="clicking(3)" class="btns">3</button>
-                    <button onclick="clicking('-')" class="btns">-</button>
-                </div>
-                <div class="row">
-                    
-                    <button onclick="equalClick('=')" class="btns1">=</button>
-                </div>
-            </div>
-        </div>
 
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="screen" >
+
+            <button class="num clear" data-button="C" onclick="clearScreen()"><i>C</i></button>
+            <button class="num" data-button="DE" onclick="oneClearClick()"><i>DE</i></button>
+            <button class="num" data-button="/" onclick="clicking('/')"><i>/</i></button>
+            <button class="num" data-button="*" onclick="clicking('*')"><i>*</i></button>
+
+            <button class="num" data-button="9" onclick="clicking('9')"><i>9</i></button>
+            <button class="num" data-button="8" onclick="clicking('8')"><i>8</i></button>
+            <button class="num" data-button="7" onclick="clicking('7')"><i>7</i></button>
+            <button class="num" data-button="-" onclick="clicking('-')"><i>-</i></button>
+
+            <button class="num" data-button="4" onclick="clicking('4')"><i>4</i></button>
+            <button class="num" data-button="5" onclick="clicking('5')"><i>5</i></button>
+            <button class="num" data-button="6" onclick="clicking('6')"><i>6</i></button>
+            <button class="num" data-button="+" onclick="clicking('+')"><i>+</i></button>
+
+            <button class="num" data-button="1" onclick="clicking('1')"><i>1</i></button>
+            <button class="num" data-button="2" onclick="clicking('2')"><i>2</i></button>
+            <button class="num" data-button="3" onclick="clicking('3')"><i>3</i></button>
+            <button class="num equal" data-button="=" onclick="equalClick('=')"><i>=</i></button>
+
+            <button class="num" data-button="0" onclick="clicking('0')"><i>0</i></button>
+            <button class="num" data-button="%" onclick="clicking('%')"><i>%</i></button>
+            <button class="num" data-button="." onclick="clicking('.')"><i>.</i></button>
+        </div>
     </div>
 </body>
 </html>
